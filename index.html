@@ -1,1 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Harissi Jewelry</title>
+  <style>
+    :root {
+      --bg: #faf7f2;
+      --text: #2b2420;
+      --muted: #7a6e64;
+      --gold: #b8913a;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 64px 16px 40px;
+      border-bottom: 1px solid #e6ddd0;
+    }
+    header h1 {
+      font-size: 2.6rem;
+      letter-spacing: 0.08em;
+      font-weight: normal;
+    }
+    header p { color: var(--muted); margin-top: 8px; }
+    main { max-width: 960px; margin: 0 auto; padding: 48px 16px; }
+    h2 { font-weight: normal; color: var(--gold); margin-bottom: 24px; text-align: center; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #e6ddd0;
+      border-radius: 8px;
+      padding: 24px;
+      text-align: center;
+    }
+    .card .icon { font-size: 2.4rem; }
+    .card h3 { font-weight: normal; margin: 12px 0 4px; }
+    .card p { color: var(--muted); font-size: 0.95rem; }
+    .status {
+      margin-top: 48px;
+      text-align: center;
+      font-family: system-ui, sans-serif;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    footer {
+      text-align: center;
+      padding: 32px 16px;
+      color: var(--muted);
+      font-size: 0.85rem;
+      border-top: 1px solid #e6ddd0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HARISSI JEWELRY</h1>
+    <p>Handcrafted pieces, made to be worn every day</p>
+  </header>
 
+  <main>
+    <h2>Collections</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="icon">💍</div>
+        <h3>Rings</h3>
+        <p>Delicate bands and statement stones.</p>
+      </div>
+      <div class="card">
+        <div class="icon">📿</div>
+        <h3>Necklaces</h3>
+        <p>Layered chains and pendants.</p>
+      </div>
+      <div class="card">
+        <div class="icon">✨</div>
+        <h3>Earrings</h3>
+        <p>Studs, hoops and drops.</p>
+      </div>
+    </div>
+
+    <p class="status">Test deployment via GitHub Pages — site under construction.</p>
+  </main>
+
+  <footer>
+    &copy; 2026 Harissi Jewelry
+  </footer>
+</body>
+</html>
